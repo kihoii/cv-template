@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.light {
+    background-color: rgb(228, 226, 207);
+    color: rgb(26, 26, 43);
+}
+
+.dark {
+    background-color: rgb(26, 26, 43);
+    color: rgb(228, 226, 207);
+}
+
+.grey {
+    background-color: gray;
+}
+
+.container {
+    width: 900px;
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 3fr;
+    box-shadow: 10px 5px 50px black;
+    margin: 50px;
+}
+
+.pfp {
+    width: 120px;
+    border-radius: 50%;
+    margin: 50px;
+}
+
+.profile-pic {
+    grid-area: 1 / 1;
+}
+
+.blocks-container-left {
+    grid-area: 2 / 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks-container-right {
+    grid-area: 2 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.part-block {
+    margin: 0 50px 50px 50px;
+}
+
+.block-title {
+    font-size: 20px;
+}
+
+.block-line {
+    width: 50px;
+    height: 2px;
+    border-radius: 50%;
+}
+
+.sub-block,
+.sub-block-row,
+.block-line,
+.diagram {
+    margin-top: 20px;
+}
+
+.sub-block-row {
+    display: flex;
+}
+
+.diagram {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.diagram p {
+    margin-bottom: 0;
+}
+
+.block-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.block-sub-title {
+    font-size: 15px;
+}
+
+.name-specialization {
+    grid-area: 1 / 2;
+}
+
+.name {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.specialization {
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+.job {
+    margin-left: 30px;
+}
+
+.company p {
+    font-size: 12px;
+    width: 100px;
+}
+
+.circle-group {
+    display: flex;
+    margin-left: 15px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.skills-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
